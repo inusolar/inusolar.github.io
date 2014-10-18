@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MeBook</title>
+	<meta name="author" content="mebookapp.com" />
+	<meta name="description" content="Create a MeBook for your preschooler" />
+	<meta name="keywords"  content="mebook" />
+	<meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="vendors/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/example3.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="vendors/jquery.easings.min.js"></script>
+
+    <script type="text/javascript" src="vendors/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['welcome', 'helloWorld', 'myPhotos', 'contactMe', 'lastPage'],
+				menu: '#menu',
+				css3: true
+			});
+
+			$('#showExamples').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				$('#examplesList').toggle();
+			});
+
+			$('html').click(function(){
+				$('#examplesList').hide();
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mebookapp.com/solar" data-text="Great app for creating a mebook for your preschooler">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<ul id="menu">
+	<li data-menuanchor="welcome" class="active"><a href="#welcome">Welcome</a></li>
+	<li data-menuanchor="helloWorld"><a href="#helloWorld">Hello World</a></li>
+	<li data-menuanchor="myPhotos"><a href="#myPhotos">My Photos</a></li>
+	<li data-menuanchor="contactMe"><a href="#contactMe">Contact Me</a></li>
+</ul>
+
+<div id="fullpage">
+
+	<div class="section active" id="section0">
+		<h1>Solar</h1>
+		<img src="imgs/solar_sand.jpg" alt="fullPage" height="600" />
+	</div>
+	<div class="section" id="section1">
+        <div class="intro">
+            <img src="imgs/ss_day1.jpg" alt="tablets" width="800" />
+            <p><br /></p>
+            <h2>Hello World</h2>
+        </div>
+    </div>
+	<div class="section" id="section2">
+	    <div class="slide active">
+			<div class="intro">
+				<h1>My Photos</h1>
+				<p>Have a look at my wonderful photos</p>
+				<img src="imgs/slider.png" alt="slider" height="132" width="662" />
+			</div>
+
+		</div>
+		<div class="slide">
+            <div class="intro">
+                <img src="imgs/family_horsepark.jpg" alt="" width="800" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/family_fete.jpg" alt="" width="800" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+			<div class="intro">
+				<img src="imgs/nnyy_park.jpg" alt="" width="800" />
+				<p><br /></p>
+				<h2></h2>
+			</div>
+		</div>
+	    <div class="slide">
+            <div class="intro">
+                <img src="imgs/oba.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/oji.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/obaba.jpg" alt="" height="600" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/gugu.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/hako.jpg" alt="" height="600" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/mama_reading.jpg" alt="" width="800" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/solar_car.jpg" alt="" height="600" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/solar_sand.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/solar_shirt.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/solar_yogart.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/solar_crying_sophie_covers_ears.png" alt="" height="600" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_pirate.jpg" alt="" height="600" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_iimono.jpg" alt="" width="800" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_playground.jpg" alt="" height="600" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_puerto_rico.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_sea.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_sofa.jpg" alt="" width="800" />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_stroller.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="intro">
+                <img src="imgs/ss_horse.jpg" alt="" height="600"  />
+                <p><br /></p>
+                <h2></h2>
+            </div>
+        </div>
+        <!--<div class="slide">-->
+        <!--    <div class="intro">-->
+        <!--        <img src="imgs/.jpg" alt="" height="600" width="800" />-->
+        <!--        <p><br /></p>-->
+        <!--        <h2></h2>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<div class="slide">-->
+        <!--    <div class="intro">-->
+        <!--        <img src="imgs/.jpg" alt="" height="600" width="800" />-->
+        <!--        <p><br /></p>-->
+        <!--        <h2></h2>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<div class="slide">-->
+        <!--    <div class="intro">-->
+        <!--        <img src="imgs/.jpg" alt="" height="600" width="800" />-->
+        <!--        <p><br /></p>-->
+        <!--        <h2></h2>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<div class="slide">-->
+        <!--    <div class="intro">-->
+        <!--        <img src="imgs/.jpg" alt="" height="600" width="800" />-->
+        <!--        <p><br /></p>-->
+        <!--        <h2></h2>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<div class="slide">-->
+        <!--    <div class="intro">-->
+        <!--        <img src="imgs/.jpg" alt="" height="600" width="800" />-->
+        <!--        <p><br /></p>-->
+        <!--        <h2></h2>-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+	    
+	</div>
+	<div class="section" id="section3">
+        <div class="intro">
+            <img src="imgs/solar_shirt_mommy.jpg" alt="tablets" height="600" />
+            <p><br /></p>
+            <div id="download"><a href="mailto:solarnyc@gmail.com">Contact Me</a></div>
+        </div>
+    </div>
+</div>
+
+<div id="infoMenu">
+	<ul>
+		<li>
+			<a href="#" id="showExamples">Dedication</a>
+			<div id="examplesList">
+				<div class="column">
+					<h3>Dedication</h3>
+					Good luck in preschool. You have already changed our world.  Good luck in the real world.
+					<br /> <br />
+					&#9825; Mom & Dad
+				</div>
+				
+			</div>
+
+		</li>
+		<li>&copy; 2014 mebookapp.com</li>
+	</ul>
+</div>
+
+</body>
+</html>
